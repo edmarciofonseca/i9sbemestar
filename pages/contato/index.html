@@ -1,0 +1,157 @@
+<!-- PAGE HERO
+				============================================= -->
+<section class="bg-fixed wide-100 page-hero-section division" id="contacts-page">
+    <div class="container">
+
+
+        <!-- PAGE HERO TEXT -->
+        <div class="row">
+            <div class="col-md-10 col-xl-8 offset-md-1 offset-xl-2">
+                <div class="hero-txt text-center white-color">
+
+                    <!-- Title -->
+                    <h2 class="h2-lg">Contato</h2>
+
+                    <!-- Text -->
+                    <p class="p-lg">Será um prazer atender você e ajudar a encontrar o cuidado ideal para suas
+                        necessidades.</p>
+
+                </div>
+            </div>
+        </div>    <!-- END PAGE HERO TEXT -->
+
+
+    </div>       <!-- End container -->
+</section>    <!-- END PAGE HERO -->
+
+
+<!-- CONTACTS-3
+============================================= -->
+<section class="bg-color-01 wide-60 contacts-section division" id="contacts-3">
+    <div class="container">
+
+
+        <!-- SECTION TITLE -->
+        <div class="row">
+            <div class="col-lg-10 offset-lg-1">
+                <div class="section-title mb-60 text-center">
+
+                    <!-- Transparent Header -->
+                    <h2 class="tra-header txt-color-02">Entre em contato</h2>
+
+                    <!-- Title 	-->
+                    <h3 class="h3-xl txt-color-01">Ainda com dúvidas?</h3>
+
+                    <!-- Text -->
+                    <p class="p-lg txt-color-05">Nossa equipe está pronta para atender você com cuidado, atenção e
+                        profissionalismo. Tire suas dúvidas, agende seu atendimento e dê o primeiro passo para cuidar de
+                        você.
+
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- GOOGLE MAP -->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="google-map mb-80">
+
+                    <!-- Embedded Google Map using an iframe - to select your location find it on Google maps and paste the link as the iframe src. If you want to use the Google Maps API instead then have at it! -->
+                    <iframe height="450"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8393924898796!2d144.9536363151022!3d-37.817230742014345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d4e793770d3%3A0x9e44d6ad0d76ba7c!2zMTIxIEtpbmcgU3QsIE1lbGJvdXJuZSBWSUMgMzAwMCwg0JDQstGB0YLRgNCw0LvQuNGP!5e0!3m2!1sru!2sua!4v1469002590349"
+                            width="600"></iframe>
+
+                </div>
+            </div>
+        </div>    <!-- END GOOGLE MAP -->
+
+
+        <div class="row">
+
+            <div class="col-md-4">
+                <div class="contacts-info mb-40">
+
+                    <!-- LOCATION -->
+                    <div class="cbox-1 mb-25">
+                        <h5 class="h5-xs txt-color-01">Nossa Localização</h5>
+                        <p class="txt-color-05">121 King Street, Melbourne,</p>
+                        <p class="txt-color-05">Victoria 3000 Australia</p>
+                    </div>
+
+                </div>
+            </div>    <!-- END CONTACTS INFO -->
+            <div class="col-md-4">
+                <div class="contacts-info mb-40">
+
+
+                    <!-- PHONES -->
+                    <div class="cbox-1 mb-25">
+                        <h5 class="h5-xs txt-color-01">Informações de contato</h5>
+                        <p class="txt-color-05"><span>Phone :</span> +12 3 3456 7890</p>
+                        <p class="txt-color-05"><span>Email :</span> <a href="mailto:yourdomain@mail.com">hello@yourdomain.com</a>
+                        </p>
+                        <p class="txt-color-05"><span>Skype :</span> <a href="tel:123456789">support.spamagic</a></p>
+                    </div>
+
+
+                </div>
+            </div>    <!-- END CONTACTS INFO -->
+            <!-- CONTACTS INFO -->
+            <div class="col-md-4">
+                <div class="contacts-info mb-40">
+
+                    <!-- WORKING HOURS -->
+                    <div class="cbox-1">
+                        <h5 class="h5-xs txt-color-01">Horas de funcionamento</h5>
+                        <p class="txt-color-05"><span>Seg – Sex :</span> 9:00 - 19:00</p>
+                        <p class="txt-color-05"><span>Sábado :</span> 9:00 - 18:00</p>
+                        <p class="txt-color-05"><span>Domingo :</span> Fechado</p>
+                    </div>
+
+                </div>
+            </div>    <!-- END CONTACTS INFO -->
+
+
+        </div>    <!-- End row -->
+
+
+    </div>       <!-- End container -->
+</section>    <!-- END CONTACTS-3 -->
+
+<script>
+    function onInit() {
+        alert('teste');
+        $(".contact-form").validate({
+            rules: {
+                name: {
+                    required: true,
+                    minlength: 1,
+                    maxlength: 16,
+                },
+                email: {
+                    required: true,
+                    email: true,
+                },
+                message: {
+                    required: true,
+                    minlength: 2,
+                }
+            },
+            messages: {
+                name: {
+                    required: "Please enter no less than (1) characters"
+                },
+                email: {
+                    required: "We need your email address to contact you",
+                    email: "Your email address must be in the format of name@domain.com"
+                },
+                message: {
+                    required: "Please enter no less than (2) characters"
+                },
+            }
+        });
+    }
+</script>
