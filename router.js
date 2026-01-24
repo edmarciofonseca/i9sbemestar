@@ -14,51 +14,64 @@ async function router() {
     if (!app) return;
 
     const hash = location.hash || '#/home';
-    const parts = hash.replace(/^#\/+/, '').split('/').filter(Boolean);
 
-    const route = parts[0] || 'home';
-    const param = parts[1];
+    // remove "#/" e quebra em partes
+    const parts = hash
+        .replace(/^#\/+/, '')
+        .split('/')
+        .filter(Boolean);
 
-    await loadPage(route, param);
+    // permite infinitas subpastas
+    const routePath = parts.length ? parts.join('/') : 'home';
+
+    await loadPage(routePath);
 
     // sempre vai pro topo
     window.scrollTo(0, 0);
 
-    currentRoute = route;
+    currentRoute = routePath;
 }
 
 /* =====================================================
    LOAD DE PÁGINA (SOMENTE HTML)
    ===================================================== */
 
-async function loadPage(route, param) {
+async function loadPage(routePath) {
     const app = document.getElementById('app');
+    if (!app) return;
 
-    if (cache[route]) {
-        apply(cache[route], param);
+    // cache por caminho completo
+    if (cache[routePath]) {
+        apply(cache[routePath]);
         return;
     }
 
-    const basePath = `./pages/${route}/index.html`;
+    const basePath = `./pages/${routePath}/index.html`;
 
     try {
-        const html = await fetch(basePath).then(r => {
-            if (!r.ok) throw new Error('not found');
-            return r.text();
-        });
+        const response = await fetch(basePath);
+        if (!response.ok) throw new Error('not found');
 
-        cache[route] = {html};
-        apply(cache[route], param);
+        const html = await response.text();
+
+        cache[routePath] = {html};
+        apply(cache[routePath]);
 
     } catch {
-        // se não encontrou, carrega 404
-        const html404 = await fetch(`./pages/404/index.html`).then(r => r.text());
-        cache['404'] = {html: html404};
-        apply(cache['404'], param);
+        // fallback 404
+        if (!cache['404']) {
+            const html404 = await fetch('./pages/404/index.html').then(r => r.text());
+            cache['404'] = {html: html404};
+        }
+        apply(cache['404']);
     }
 }
 
-function apply(entry, param) {
+/* =====================================================
+   APPLY HTML
+   ===================================================== */
+
+function apply(entry) {
     const app = document.getElementById('app');
     app.innerHTML = entry.html;
 }
