@@ -13,6 +13,75 @@ body {
     font-weight: 300;
 }
 
+dialog {
+    border: none;
+    padding: 0;
+    border-radius: 12px;
+    max-width: 520px;
+    width: 90%;
+}
+
+/* fundo escuro atrás da modal */
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.55);
+}
+
+dialog .modal-body {
+    padding: 24px 24px 18px 24px;
+}
+
+dialog .modal-footer {
+    text-align: right;
+    margin-top: 16px;
+}
+
+.app-modal {
+    border: none;
+    padding: 0;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 90%;
+}
+
+.app-modal::backdrop {
+    background: rgba(0, 0, 0, .55);
+}
+
+/* header */
+.app-modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 20px 12px 20px;
+}
+
+/* botão X */
+.app-modal-close {
+    background: transparent;
+    border: none;
+    font-size: 22px;
+    line-height: 1;
+    cursor: pointer;
+}
+
+/* linha */
+.app-modal-divider {
+    height: 1px;
+    background: #e5e5e5;
+}
+
+/* corpo */
+.app-modal-body {
+    padding: 18px 20px 22px 20px;
+}
+
+.app-modal-close:focus,
+.app-modal-close:focus-visible {
+    outline: none;
+    box-shadow: none;
+}
+
+
 /*------------------------------------------------------------------*/
 /*  IE10 in Windows 8 and Windows Phone 8 Bug fix
 /*-----------------------------------------------------------------*/
