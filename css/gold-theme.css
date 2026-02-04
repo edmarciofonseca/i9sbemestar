@@ -6240,11 +6240,7 @@ p.foo-email a {
 }
 
 #contacts-page.page-hero-section {
-    background-image: url(../images/frente-predio-2.jpeg);
-}
-
-#home-page.page-hero-section {
-    background-image: url(../images/home-header.jpg);
+    background-image: url(../images/frente-predio.jpeg);
 }
 
 /*------------------------------------------*/
