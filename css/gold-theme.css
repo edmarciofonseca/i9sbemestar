@@ -2575,41 +2575,11 @@ ol.digit-list p {
     z-index: 3;
 }
 
-#hero-2 {
-    background-image: url(../images/hero-2.jpg);
-    background-position: bottom center;
-    padding-top: 190px;
-    padding-bottom: 485px;
-    position: relative;
-}
-
-.hero-5-txt {
-    background-image: url(../images/hero-5.jpg);
-}
-
 #hero-5-content {
     padding-top: 180px;
     padding-bottom: 400px;
     position: relative;
     z-index: 3;
-}
-
-#hero-6 {
-    background-image: url(../images/hero-6.jpg);
-    padding-top: 180px;
-    padding-bottom: 110px;
-}
-
-#hero-10 {
-    background-image: url(../images/hero-10.jpg);
-    padding-top: 150px;
-    padding-bottom: 60px;
-}
-
-#hero-11 {
-    background-image: url(../images/hero-11.jpg);
-    padding-top: 160px;
-    padding-bottom: 110px;
 }
 
 #hero-12 .hero-overlay {
@@ -6200,60 +6170,12 @@ p.foo-email a {
     background-size: cover;
 }
 
-#about-page.page-hero-section {
-    background-image: url(../images/about-page.jpg);
-}
-
-#booking-page.page-hero-section {
-    background-image: url(../images/booking-page.jpg);
-}
-
-#blogs-page.page-hero-section {
-    background-image: url(../images/blogs-page.jpg);
-}
-
 #contacts-page.page-hero-section {
-    background-image: url(../images/contacts-page.jpg);
+    background-image: url(../images/frente-predio-2.jpeg);
 }
 
 #home-page.page-hero-section {
     background-image: url(../images/home-header.jpg);
-}
-
-#faqs-page.page-hero-section {
-    background-image: url(../images/faqs-page.jpg);
-}
-
-#gallery-page.page-hero-section {
-    background-image: url(../images/gallery-page.jpg);
-}
-
-#gift-cards-page.page-hero-section {
-    background-image: url(../images/gift-cards-page.jpg);
-}
-
-#services-page.page-hero-section {
-    background-image: url(../images/services-page.jpg);
-}
-
-#service-details-page.page-hero-section {
-    background-image: url(../images/service-details-page.jpg);
-}
-
-#single-post-page.page-hero-section {
-    background-image: url(../images/single-post-page.jpg);
-}
-
-#team-page.page-hero-section {
-    background-image: url(../images/team-page.jpg);
-}
-
-#pricing-page.page-hero-section {
-    background-image: url(../images/pricing-page.jpg);
-}
-
-#terms-page.page-hero-section {
-    background-image: url(../images/terms-page.jpg);
 }
 
 /*------------------------------------------*/
