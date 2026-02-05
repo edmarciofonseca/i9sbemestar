@@ -1288,7 +1288,7 @@ ul {
 
 ul.simple-list {
     list-style: disc;
-    margin-left: 15px;
+    margin-left: 30px;
 }
 
 /*------------------------------------------*/
@@ -3576,26 +3576,22 @@ ol.digit-list p {
 }
 
 .sbox-13-txt {
-    padding: 60px 40% 60px 40px;
+    padding: 60px 45% 60px 40px;
     -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, .05);
     -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, .05);
     box-shadow: 0 5px 10px rgba(0, 0, 0, .05);
 }
 
 #s13-1 {
-    background-image: url(../images/s13-1.png);
+    background-image: url(../images/serv-estetica.png);
 }
 
 #s13-2 {
-    background-image: url(../images/s13-2.png);
+    background-image: url(../images/serv-psicologia.png);
 }
 
 #s13-3 {
-    background-image: url(../images/s13-3.png);
-}
-
-#s13-4 {
-    background-image: url(../images/s13-4.png);
+    background-image: url(../images/serv-nutricao.png);
 }
 
 .sbox-14 {
