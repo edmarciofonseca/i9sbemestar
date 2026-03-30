@@ -22,6 +22,5 @@ function fecharDialog(idDialog) {
     dialog.close();
 }
 
-// 👇 torne globais para o HTML
 window.abrirDialog = abrirDialog;
 window.fecharDialog = fecharDialog;

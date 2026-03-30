@@ -74,10 +74,18 @@
                             </li>
                             <li aria-haspopup="true" class="nl-simple"><a href="#/contato" rel="noopener noreferrer">Contato</a>
                             </li>
-                            <li aria-haspopup="true" class="nl-simple"><a
-                                    class="btn btn-color-02 tra-01-hover last-link"
-                                    href="https://inovesaudebemestar.simplesagenda.com.br/" rel="noopener noreferrer"
-                                    target="_blank"> Agende um Horário</a></li>
+                            <li aria-haspopup="true" class="nl-simple">
+                                <a href="https://w.app/t9uvrn" target="_blank">
+                                    <img src="images/whatsapp.svg" style="height: 35px;">
+                                </a>
+                            </li>
+                            <li aria-haspopup="true" class="nl-simple">
+                                <a
+                                        class="btn btn-color-02 tra-01-hover last-link"
+                                        onclick="abrirDialog('dialog-estetica')"> Agende um Horário
+                                </a>
+                            </li>
+
                         </ul>
                     </nav>    <!-- END MAIN MENU -->
 
@@ -125,6 +133,68 @@
         </footer>    <!-- END FOOTER-1 -->
     </div>
 </div>
+
+<dialog class="app-modal" id="dialog-estetica">
+
+    <div class="app-modal-header">
+        <h5 class="h5-md txt-color-01">Agendar Horário</h5>
+        <button class="app-modal-close" onclick="fecharDialog('dialog-estetica')">&times;</button>
+    </div>
+
+    <div class="app-modal-divider"></div>
+
+    <div class="app-modal-body">
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="contacts-info mb-40">
+
+                    <!-- LOCATION -->
+                    <div class="cbox-1 text-center">
+                        <h5 class="h5-xs txt-color-01">Belo Horizonte - MG</h5>
+                        <p class="txt-color-05">Rua Domingos Vieira, 587</p>
+                        <p class="txt-color-05">Sala 1120</p>
+                        <p class="txt-color-05">Santa Efigênia, 30.150-242</p>
+                    </div>
+
+                </div>
+                <div class="text-center">
+                    <a
+                            class="btn btn-color-02 tra-01-hover last-link"
+                            href="https://inovesaudebemestar.simplesagenda.com.br/" rel="noopener noreferrer"
+                            target="_blank"> Agende um Horário
+                    </a>
+                </div>
+
+            </div>
+
+
+            <div class="col-md-6">
+                <div class="contacts-info mb-40 text-center">
+
+                    <!-- LOCATION -->
+                    <div class="cbox-1">
+                        <h5 class="h5-xs txt-color-01">Nova Serrana - MG</h5>
+                        <p class="txt-color-05">Rua Marechal Deodoro, 37</p>
+                        <p class="txt-color-05">Sala 106</p>
+                        <p class="txt-color-05">Centro, 35.520-080</p>
+                    </div>
+
+                </div>
+                <div class="text-center">
+
+                    <a
+                            class="btn btn-color-02 tra-01-hover last-link text-center"
+                            href="http://inovenovaserrana.simplesagenda.com.br" rel="noopener noreferrer"
+                            target="_blank"> Agende um Horário
+                    </a>
+                </div>
+            </div>
+        </div>    <!-- END GOOGLE MAP -->
+
+    </div>
+
+</dialog>
 
 <script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/modernizr.custom.js"></script>
